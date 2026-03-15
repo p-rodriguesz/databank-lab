@@ -36,6 +36,33 @@ ALTER TABLE livro
 ADD CONSTRAINT fk_id_usuario 
 FOREIGN KEY (id_usuario) REFERENCES users(id_usuario);
 describe livro;
+<<<<<<< HEAD
+show tables;
+select * from users;
+select * from categoria;
+ALTER TABLE livro 
+ADD CONSTRAINT fk_id_categoria
+FOREIGN KEY (id_categoria) REFERENCES categoria(id_categoria);
+describe categoria;
+describe livro;
+alter table livro add column id_categoria int not null;
+alter table livro add column id_autor int not null;
+ALTER TABLE livro 
+ADD CONSTRAINT fk_id_autor
+FOREIGN KEY (id_autor) REFERENCES autor(id_autor);
+alter table livro add column id_editora int not null;
+ALTER TABLE livro 
+ADD CONSTRAINT fk_id_editora
+FOREIGN KEY (id_editora) REFERENCES editora(id_editora);
+describe livro;
+
+
+
+
+
+
+=======
+>>>>>>> 0e651d2bc844441331f500851b04befe3f950781
 
 
 
