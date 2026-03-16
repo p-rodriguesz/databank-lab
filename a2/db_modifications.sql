@@ -1,3 +1,4 @@
+
 /*
      CREATION QUERY OF DATABASE
      N' NAVIGATION QUERY OF DATABASE
@@ -54,17 +55,4 @@ ALTER TABLE livro
 ADD CONSTRAINT fk_id_editora
 FOREIGN KEY (id_editora) REFERENCES editora(id_editora);
 describe livro;
-
-
-
-
-
-
-
-
-
-
-
-
-
 
