@@ -1,23 +1,4 @@
-/*
-     CREATION QUERY OF DATABASE
-     N' NAVIGATION QUERY OF DATABASE
-     
-     
-*/
-CREATE database biblioteca_pessoal_1s2026;
-USE biblioteca_pessoal_1s2026;
-SHOW TABLES;
-SELECT * FROM livro;
-SHOW TABLES;
-SELECT * FROM users;
-ALTER TABLE users ADD senha varchar (255);
-SHOW TABLES;
-select * from users;
-alter table users modify column data_cadastro timestamp;
-select * from users;
-alter table users add data_atualizacao timestamp;
-select * from users;
-show tables;
+use biblioteca_pessoal_1s2026;
 select * from livro;
 alter table livro drop column descricao;
 select * from livro;
@@ -30,7 +11,6 @@ select * from livro;
 alter table livro modify column ano_publicacao timestamp;
 select * from livro;
 alter table livro add data_cadastro timestamp;
-select * from users;
 alter table livro add column id_usuario int not null;
 ALTER TABLE livro 
 ADD CONSTRAINT fk_id_usuario 
@@ -54,17 +34,3 @@ ALTER TABLE livro
 ADD CONSTRAINT fk_id_editora
 FOREIGN KEY (id_editora) REFERENCES editora(id_editora);
 describe livro;
-
-
-
-
-
-
-
-
-
-
-
-
-
-

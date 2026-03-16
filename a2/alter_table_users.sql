@@ -1,0 +1,13 @@
+USE biblioteca_pessoal_1s2026;
+SHOW TABLES;
+SELECT * FROM livro;
+SHOW TABLES;
+SELECT * FROM users;
+ALTER TABLE users ADD senha varchar (255);
+SHOW TABLES;
+select * from users;
+alter table users modify column data_cadastro timestamp;
+select * from users;
+alter table users add data_atualizacao timestamp;
+select * from users;
+show tables;
