@@ -34,3 +34,6 @@ ALTER TABLE livro
 ADD CONSTRAINT fk_id_editora
 FOREIGN KEY (id_editora) REFERENCES editora(id_editora);
 describe livro;
+alter table livro
+add constraint fk_usuario
+foreign key (id_usuario) references Usuario(id_usuario) on delete cascade;
